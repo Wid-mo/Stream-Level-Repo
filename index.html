@@ -17,26 +17,40 @@
 
 	<div id= "website">
 		<div id= "menu" > 
-				 Panel logowania &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				 <a href="index.html" > Rejestracja konta </a>
-				<input type="text" value="login"/> 
-				<input type="password" value="haslo"/> 
-				<input type="submit" value="Zaloguj"/> 
-			
+				
+				 <p class="panel_napis"><b>Panel logowania</b></p>
+				 <a href="index.html" > <p class="rejestracja"> <u>Rejestracja konta</u> </p></a>
+				 
+				 <form>
+					<input type="text" placeholder="login" onfocus="this.placeholder='' " onblur="this.placeholder='login' "/> 
+					<input type="password" placeholder="hasło"  onfocus="this.placeholder='' " onblur="this.placeholder='hasło' "/> 
+					<input type="submit" value="Zaloguj"/> 
+					<div style="clear:both;"> </div>
+					
+				</form>	
 		</div>
+		
 		<div id="reklama" > To jest miejsce na twoją reklamę </div>
+		
 		<div id= "content" > 
-				<div id="zdjecie" > Zdjęcie </div>
-				<!--     <img src="img/Wroclaw.bmp" alt=" Wrocław, Najlepsze miasto w Polsce" />  -->
-			
-				<p> Jesli nie_zalogowany	"To jest strona o tym i o tym" <br/><br/> 
+				<div id="zdjecie" > Zdjęcie <br>
+				     <img src="img/Wroclaw.bmp" alt=" Wrocław, Najlepsze miasto w Polsce" />  
+				 </div>
+				 
+				<p class="intro"> Jesli nie_zalogowany	"To jest strona o tym i o tym" <br/><br/> 
 				"Zaloguj się by móc korzystać z możliwości serwisu"  </p>
 				
-				 <br/><br/> 
-				 <h3> Znajdź interesujące cię wydarzenie 
-						<input type="text" value="wyszukaj"/>
-						<input type="submit" value="OK" cursor="pointer"/>
-				</h3>
+				 <div id="wyszukiwarka" > 
+						 <p class="wyszukane_napis">Znajdź interesujące cię wydarzenie</p>
+						 <hr>
+						 <form class="wprowadz_wydarzenie">
+								   
+										<input type="text" class="wydarzenia_wejscie" placeholder="wyszukaj" onfocus="this.placeholder='' " onblur="this.placeholder='wyszukaj' "/>
+										<input type="submit" value="OK"/>
+										
+						</form>
+						<div style="clear:both;"> </div>
+				</div>
 				
 				<div id="wyszukane_wydarzenia" > 
 						Brak Wydarzen
@@ -44,7 +58,8 @@
 			
 		</div>
 		
-		<div id= "footer" > footer </div>
+		<div id= "footer" > Interesujące wydarzenia we Wrocławiu. Prosty sposób na poinformowanie
+			znajomych o wydarzeniach na które zamierzasz przyjść &copy; 2016 </div>
 	</div>
 
 </body>
