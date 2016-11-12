@@ -21,9 +21,9 @@
 				 <p class="panel_napis"><b>Panel logowania</b></p>
 				 <a href="index.html" > <p class="rejestracja"> <u>Rejestracja konta</u> </p></a>
 				 
-				 <form>
-					<input type="text" placeholder="login" onfocus="this.placeholder='' " onblur="this.placeholder='login' "/> 
-					<input type="password" placeholder="hasło"  onfocus="this.placeholder='' " onblur="this.placeholder='hasło' "/> 
+				 <form action="zaloguj.php" method="post">
+					<input type="text" name="login" placeholder="login" onfocus="this.placeholder='' " onblur="this.placeholder='login' "/> 
+					<input type="password" name="haslo" placeholder="haslo"  onfocus="this.placeholder='' " onblur="this.placeholder='haslo' "/> 
 					<input type="submit" value="Zaloguj"/> 
 					<div style="clear:both;"> </div>
 					
@@ -33,12 +33,13 @@
 		<div id="reklama" > To jest miejsce na twoją reklamę </div>
 		
 		<div id= "content" > 
-				<div id="zdjecie" > Zdjęcie <br>
+				<div id="zdjecie" ><h2>Witamy we Wrocławiu!</h2><br>
 				     <img src="img/wroclaw_zdj_gl.jpg"  alt=" Wrocław, Najlepsze miasto w Polsce" />  
 				 </div>
 				 
-				<p class="intro"> Jesli nie_zalogowany	"To jest strona o tym i o tym" <br/><br/> 
+				<p class="intro"> Nie jesteś zalogowany. "To jest wyszukiwarka wydarzeń, klubów, imprez itp. we Wrocławiu." <br/><br/> 
 				"Zaloguj się by móc korzystać z możliwości serwisu"  </p>
+				
 				
 				 <div id="wyszukiwarka" > 
 						 <p class="wyszukane_napis">Znajdź interesujące cię wydarzenie:</p>
