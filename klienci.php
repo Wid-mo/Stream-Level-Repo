@@ -51,7 +51,25 @@
 										<input type="submit" value="OK"/>
 										
 						</form>
-						<div style="clear:both;"> </div>
+						<div style="clear:both;">
+														<div id="map"></div>
+					<script>
+						function initMap() {
+						var uluru = {lat: 51.110, lng: 17.030};
+						var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 15,
+						center: uluru
+						});
+						var marker = new google.maps.Marker({
+						position: uluru,
+						map: map
+						});
+						}
+					</script>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuFgUnVW-nYWpRXRejrDstghFgjSjLeIM&callback=initMap">
+					</script>
+						</div>
 				</div>
 </body>
 </html>
