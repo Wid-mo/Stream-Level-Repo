@@ -20,6 +20,9 @@ body{
 	background-color: blue;
 	text-align: center;
 	
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(40, 47, 255, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(40, 47, 255, 1);
+	box-shadow:         0px 0px 30px 0px rgba(40, 47, 255, 1);
 	position: fixed;
 }
 
@@ -96,6 +99,10 @@ input[type=submit]:hover {
 	background-color: green;
 	margin-left: auto;
 	margin-right: auto;
+	
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(23, 165, 51, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(23, 165, 51, 1);
+	box-shadow:         0px 0px 30px 0px rgba(23, 165, 51, 1);
 }
 
 #zdjecie{
@@ -106,8 +113,8 @@ input[type=submit]:hover {
 }
 
 img{
-	width:1024px;
-	height: 768px;
+	width:76%;
+	height: 45%;
 	border: 3px solid black;
 	
 }
@@ -142,10 +149,18 @@ img{
 	margin-top: 60px;
 	background-color: red;
 	font-size: 16px;
+	
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(255,20,20, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(255,20,20, 1);
+	box-shadow:         0px 0px 30px 0px rgba(255,20,20, 1);
 }
 
 #map{
 	height: 400px;
 	width: 80%;
-	margin: 0 auto;
+	margin: 60px auto;
+	
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(230,255,230, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(230,255,230, 1);
+	box-shadow:         0px 0px 30px 0px rgba(230,255,230, 1);
 }

@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: index.html');
+		header('Location: klienci.php');
 		exit();
 	}
 
